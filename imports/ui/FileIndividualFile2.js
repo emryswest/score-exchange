@@ -11,7 +11,7 @@ class IndividualFile extends Component {
     };
 
     this.removeFile = this.removeFile.bind(this);
-    this.sendTask = this.sendTask.bind(this);
+    this.sendScore = this.sendScore.bind(this);
 
   }
 
@@ -26,10 +26,10 @@ class IndividualFile extends Component {
     UserFiles.remove(this.props.fileId);
     }
 
-  sendTask() {
+  sendScore() {
 //    console.log(this.props);
     var text = this.props.fileUrl;
-    Meteor.call('tasks.insert', text, getSelectedUser());
+    Meteor.call('scores.insert', text, getSelectedUser());
   }
 
 
@@ -47,7 +47,7 @@ class IndividualFile extends Component {
           <a href={this.props.fileUrl} className="btn btn-outline btn-primary btn-sm"
            target="_blank"><strong></strong></a>
            { this.props.fileUrl.match(/^http.*\.(png|jpg|jpeg|gif|bmp)$/i) ? (
-	        <img onClick={this.sendTask} className="filethumb" src={ this.props.fileUrl }/>
+	        <img onClick={this.sendScore} className="filethumb" src={ this.props.fileUrl }/>
            ) : '' }
 
         </span>

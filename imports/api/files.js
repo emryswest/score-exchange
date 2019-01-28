@@ -12,3 +12,17 @@ if (Meteor.isServer) {
     return UserFiles.find().cursor;
   });
 }
+
+/*
+Citations
+
+Schmidt, Geoff and Matt DeBergalis. (n.d.) “Meteor - Todo App with React: Collections.” meteor.com.
+https://www.meteor.com/tutorials/react/collections (accessed fall 2018)
+
+Schmidt, Geoff and Matt DeBergalis. (n.d.) “Meteor - Todo App with React: Publish and subscribe.” meteor.com.
+https://www.meteor.com/tutorials/react/publish-and-subscribe (accessed fall 2018)
+
+Schmidt, Geoff and Matt DeBergalis. (n.d.) “Meteor - Todo App with React: Security with methods.” meteor.com.
+https://www.meteor.com/tutorials/react/security-with-methods (accessed fall 2018)
+
+*/

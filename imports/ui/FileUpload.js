@@ -141,3 +141,11 @@ export default withTracker( ( props ) => {
     files,
   };
 })(FileUpload);
+
+/*
+Citations
+
+Dimitru, Dr. (2018) “Meteor Files: React Example.” Veliov Group.
+https://github.com/VeliovGroup/Meteor-Files/wiki/React-Example (accessed fall 2018)
+
+*/

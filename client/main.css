@@ -123,6 +123,11 @@ li .text {
   max-height: 80%;
 }
 
+.scorethumb {
+  max-width: 100%;
+  max-height: 80%;
+}
+
 .hidden {
   display: none;
 }
@@ -153,3 +158,11 @@ li .text {
   text-align: center;
   font-size: 30px;
 }
+
+/*
+Citations
+
+Schmidt, Geoff and Matt DeBergalis. (n.d.) “Meteor - Todo App with React: Components.” meteor.com.
+https://www.meteor.com/tutorials/react/components (accessed fall 2018)
+
+*/

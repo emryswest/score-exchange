@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
 
-import { Tasks } from '../api/tasks.js';
+import { Scores } from '../api/scores.js';
 
 
-// Task component - represents a single todo item
-export default class Task extends Component {
+// Score component - represents a single score item
+export default class Score extends Component {
 
-deleteThisTask() {
-    Meteor.call('tasks.remove', this.props.task._id);
+deleteThisScore() {
+    Meteor.call('scores.remove', this.props.score._id);
 }
 
   render() {
 
     return (
-      <li className="taskClassName" onClick={this.deleteThisTask.bind(this)}>
+      <li className="scoreClassName" onClick={this.deleteThisScore.bind(this)}>
         <span className="text">
-        <strong>{this.props.task.username}</strong>: { this.props.task.text.match(/^http.*\.(png|jpg|jpeg|gif|bmp)$/i) ? (
-   <img className="taskthumb" src={ this.props.task.text }/>
- ) : this.props.task.text }
+        <strong>{this.props.score.username}</strong>: { this.props.score.text.match(/^http.*\.(png|jpg|jpeg|gif|bmp)$/i) ? (
+   <img className="scorethumb" src={ this.props.score.text }/>
+ ) : this.props.score.text }
         </span>
       </li>
     );
